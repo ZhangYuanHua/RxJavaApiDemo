@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.baoyachi.rxjavaapidemo.create.CreateActivity;
 import com.baoyachi.rxjavaapidemo.create.DeferActivity;
 import com.baoyachi.rxjavaapidemo.create.FromActivity;
+import com.baoyachi.rxjavaapidemo.create.IntervalActivity;
 import com.baoyachi.rxjavaapidemo.create.JustActivity;
 
 public class MainActivity extends AppCompatActivity
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity
     private TextView mTvJust;
     private TextView mTvFrom;
     private TextView mTvDefer;
+    private TextView mTvInterval;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -49,6 +51,10 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(getBaseContext(), DeferActivity.class));
         });
 
+        mTvInterval = (TextView) findViewById(R.id.tv_interval);
+        mTvInterval.setOnClickListener(view -> {
+            startActivity(new Intent(getBaseContext(), IntervalActivity.class));
+        });
 
 
     }

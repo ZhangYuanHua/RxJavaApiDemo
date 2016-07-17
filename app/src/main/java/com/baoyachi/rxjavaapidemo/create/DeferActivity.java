@@ -3,6 +3,7 @@ package com.baoyachi.rxjavaapidemo.create;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 
 import com.baoyachi.rxjavaapidemo.R;
 import com.baoyachi.rxjavaapidemo.util.LogUtil;
@@ -25,7 +26,8 @@ public class DeferActivity extends AppCompatActivity
         setContentView(R.layout.activity_create);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        TextView tvContent = (TextView) findViewById(R.id.tv_content);
+        tvContent.setText(this.getClass().getSimpleName());
         init();
 
     }
