@@ -8,7 +8,6 @@ import com.baoyachi.rxjavaapidemo.R;
 
 public class CreateActivity extends AppCompatActivity
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
