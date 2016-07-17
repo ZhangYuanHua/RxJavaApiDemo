@@ -6,11 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.baoyachi.rxjavaapidemo.create.CreateActivity;
+import com.baoyachi.rxjavaapidemo.create.JustActivity;
 
 public class MainActivity extends AppCompatActivity
 {
 
     private TextView mTvCreate;
+    private TextView mTvJust;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,6 +29,13 @@ public class MainActivity extends AppCompatActivity
         mTvCreate.setOnClickListener(view -> {
             startActivity(new Intent(getBaseContext(), CreateActivity.class));
         });
+
+        mTvJust = (TextView) findViewById(R.id.tv_just);
+        mTvJust.setOnClickListener(view -> {
+            startActivity(new Intent(getBaseContext(), JustActivity.class));
+        });
+
+
     }
 
 }
