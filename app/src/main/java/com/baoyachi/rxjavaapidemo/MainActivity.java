@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.baoyachi.rxjavaapidemo.create.CreateActivity;
+import com.baoyachi.rxjavaapidemo.create.DeferActivity;
 import com.baoyachi.rxjavaapidemo.create.FromActivity;
 import com.baoyachi.rxjavaapidemo.create.JustActivity;
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity
     private TextView mTvCreate;
     private TextView mTvJust;
     private TextView mTvFrom;
+    private TextView mTvDefer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,6 +42,11 @@ public class MainActivity extends AppCompatActivity
         mTvFrom = (TextView) findViewById(R.id.tv_from);
         mTvFrom.setOnClickListener(view -> {
             startActivity(new Intent(getBaseContext(), FromActivity.class));
+        });
+
+        mTvDefer = (TextView) findViewById(R.id.tv_defer);
+        mTvDefer.setOnClickListener(view -> {
+            startActivity(new Intent(getBaseContext(), DeferActivity.class));
         });
 
 
