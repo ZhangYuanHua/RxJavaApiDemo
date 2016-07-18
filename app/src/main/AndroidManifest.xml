@@ -47,6 +47,12 @@
             android:label="@string/title_activity_create"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
+        <activity
+            android:name=".create.RangeActivity"
+            android:label="@string/title_activity_create"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
