@@ -10,6 +10,7 @@ import com.baoyachi.rxjavaapidemo.create.DeferActivity;
 import com.baoyachi.rxjavaapidemo.create.FromActivity;
 import com.baoyachi.rxjavaapidemo.create.IntervalActivity;
 import com.baoyachi.rxjavaapidemo.create.JustActivity;
+import com.baoyachi.rxjavaapidemo.create.TimerActivity;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity
     private TextView mTvFrom;
     private TextView mTvDefer;
     private TextView mTvInterval;
+    private TextView mTvTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -54,6 +56,10 @@ public class MainActivity extends AppCompatActivity
         mTvInterval = (TextView) findViewById(R.id.tv_interval);
         mTvInterval.setOnClickListener(view -> {
             startActivity(new Intent(getBaseContext(), IntervalActivity.class));
+        });
+        mTvTimer = (TextView) findViewById(R.id.tv_timer);
+        mTvTimer.setOnClickListener(view -> {
+            startActivity(new Intent(getBaseContext(), TimerActivity.class));
         });
 
 

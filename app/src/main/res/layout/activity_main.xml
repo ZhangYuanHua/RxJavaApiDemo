@@ -67,6 +67,17 @@
             android:text="interval"
             android:textSize="20sp"/>
 
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="timer"
+            android:textSize="20sp"/>
+
     </LinearLayout>
 
 
