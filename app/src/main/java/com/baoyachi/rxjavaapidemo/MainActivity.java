@@ -11,6 +11,7 @@ import com.baoyachi.rxjavaapidemo.create.FromActivity;
 import com.baoyachi.rxjavaapidemo.create.IntervalActivity;
 import com.baoyachi.rxjavaapidemo.create.JustActivity;
 import com.baoyachi.rxjavaapidemo.create.RangeActivity;
+import com.baoyachi.rxjavaapidemo.create.RepeatActivity;
 import com.baoyachi.rxjavaapidemo.create.TimerActivity;
 
 public class MainActivity extends AppCompatActivity
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity
     private TextView mTvInterval;
     private TextView mTvTimer;
     private TextView mTvRange;
+    private TextView mTvRepeat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -67,6 +69,11 @@ public class MainActivity extends AppCompatActivity
         mTvRange = (TextView) findViewById(R.id.tv_range);
         mTvRange.setOnClickListener(view -> {
             startActivity(new Intent(getBaseContext(), RangeActivity.class));
+        });
+
+        mTvRepeat = (TextView) findViewById(R.id.tv_repeat);
+        mTvRepeat.setOnClickListener(view -> {
+            startActivity(new Intent(getBaseContext(), RepeatActivity.class));
         });
 
 
