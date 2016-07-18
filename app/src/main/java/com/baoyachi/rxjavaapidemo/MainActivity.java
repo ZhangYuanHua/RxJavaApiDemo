@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.baoyachi.rxjavaapidemo.create.CreateActivity;
 import com.baoyachi.rxjavaapidemo.create.DeferActivity;
+import com.baoyachi.rxjavaapidemo.create.EmptyNeverThrowActivity;
 import com.baoyachi.rxjavaapidemo.create.FromActivity;
 import com.baoyachi.rxjavaapidemo.create.IntervalActivity;
 import com.baoyachi.rxjavaapidemo.create.JustActivity;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity
     private TextView mTvTimer;
     private TextView mTvRange;
     private TextView mTvRepeat;
+    private TextView mTvEmptyNeverThrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -74,6 +76,11 @@ public class MainActivity extends AppCompatActivity
         mTvRepeat = (TextView) findViewById(R.id.tv_repeat);
         mTvRepeat.setOnClickListener(view -> {
             startActivity(new Intent(getBaseContext(), RepeatActivity.class));
+        });
+
+        mTvEmptyNeverThrow = (TextView) findViewById(R.id.tv_empty_never_throw);
+        mTvEmptyNeverThrow.setOnClickListener(view -> {
+            startActivity(new Intent(getBaseContext(), EmptyNeverThrowActivity.class));
         });
 
 

@@ -99,6 +99,16 @@
             android:text="repeat"
             android:textSize="20sp"/>
 
+        <TextView
+            android:id="@+id/tv_empty_never_throw"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="empty_never_throw"
+            android:textSize="20sp"/>
+
     </LinearLayout>
 
 
